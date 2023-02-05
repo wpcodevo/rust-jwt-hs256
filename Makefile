@@ -24,7 +24,8 @@ install:
 	cargo add uuid --features "serde v4"
 	cargo add sqlx --features "runtime-async-std-native-tls postgres chrono uuid"
 	cargo add jsonwebtoken
-	cargo add bcrypt
+	cargo add argon2
+	cargo add rand_core --features "std"
 	# HotReload
 	cargo install cargo-watch
 	# SQLX-CLI
